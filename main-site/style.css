@@ -1,0 +1,16 @@
+body {
+    background-color: bisque;
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    font-family: 'Courier New', Courier, monospace;
+}
