@@ -5,10 +5,15 @@
 
 /* Menu page */
 .menu-page {
-    background-color: #fff3cd;
+    background-color:bisque;
+    padding: 20px;
 }
+
 
 /* Contact page */
 .contact-page {
     background-color: #e0f7fa;
 }
+
+/* Reservation Page*/
+
