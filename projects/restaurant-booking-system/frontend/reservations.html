@@ -4,12 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bella's Restaurant Reservations</title>
+
+    <!-- Your CSS FIRST so it can override Bootstrap -->
     <link rel="stylesheet" href="../backend/restaurant.css">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <head>
-        Book a reservation below
-    </head>
+
+<body class="reservation-page">
+
+    <header>
+        <h1 style="text-align: center;">Book a reservation below</h1>
+        <p>Welcome to Bella’s Restaurant — where every reservation opens the door to warm hospitality...</p>
+    </header>
+
+    <main>
+
+        <!-- FOOD ITEM DISPLAY PLUS TEXT -->        
+        <div class="card-group">
+
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text...</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RESERVATION FORM -->
+        <div class="row mt-4">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+        </div>
+
+    </main>
+
 </body>
 </html>
+
+        <!-- 
+        welcome message -
+        show food images
+        Name 
+        phone number
+        table for 30 above
+        reservation date- show today, tommorow, other
+        time of booking
+        -->

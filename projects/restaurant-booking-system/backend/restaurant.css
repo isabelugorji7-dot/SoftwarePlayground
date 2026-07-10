@@ -1,3 +1,14 @@
-body {
-    background-color: bisque;
+/* Reservations page */
+.reservations-page {
+    background-color: #f7efe8;
+}
+
+/* Menu page */
+.menu-page {
+    background-color: #fff3cd;
+}
+
+/* Contact page */
+.contact-page {
+    background-color: #e0f7fa;
 }
