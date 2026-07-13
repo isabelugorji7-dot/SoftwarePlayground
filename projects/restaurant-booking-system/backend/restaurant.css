@@ -53,6 +53,7 @@
 }
 
 
+
 /* Reservations page */
 .reservations-page {
     background-color: #f7efe8;
@@ -71,10 +72,34 @@
 }
 
 /* Contact page */
+/* main contact page css starts */
 .contact-page {
     background-color:bisque;
     padding: 90px;
+    min-height: 100vh;  
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
+/* main contact page css ends */
+
+/* google maps css starts*/
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.box {
+    max-width: 600px;
+}
+
+/* google maps css ends */
+
 
 input, textarea, button {
     font-family:'Courier New', Courier, monospace;
@@ -86,9 +111,7 @@ input, textarea, button {
     box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
-}
+
 
 
 
