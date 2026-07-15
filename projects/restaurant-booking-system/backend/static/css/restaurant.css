@@ -1,3 +1,7 @@
+body {
+    background: pink;
+}
+
 /* Home page */
 .top-banner {
     height: 650px;               /* adjust height to your liking */
