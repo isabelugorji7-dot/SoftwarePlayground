@@ -1,0 +1,121 @@
+body {
+    background: pink;
+}
+
+/* Home page */
+.top-banner {
+    height: 650px;               /* adjust height to your liking */
+    width: 100%;
+    background-image: url("../images/IMG_8411.jpeg");
+    background-size: cover;      /* fills the banner without stretching */
+    background-position: center; /* keeps the important part centered */
+    background-repeat: no-repeat;
+}
+
+.nav-link {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-display: block;
+    
+}
+
+.h1-headings {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.learn-more {
+    color: blue;
+}
+
+.home-image {
+    padding: 5px;
+}
+
+.h1-welcome-heading {
+    text-align: center;
+    font-family: cursive;
+}
+.h1-welcome-message {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+.card {
+    padding: 20px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-head {
+    text-align: center;
+    color: brown;
+}
+
+
+
+/* Reservations page */
+.reservations-page {
+    background-color: #f7efe8;
+}
+
+/* Menu page */
+.menu-page {
+    background-color:bisque;
+    padding: 20px;
+}
+
+.nav-link {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-display: block;  
+}
+
+/* Contact page */
+/* main contact page css starts */
+.contact-page {
+    background-color:bisque;
+    padding: 90px;
+    min-height: 100vh;  
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* main contact page css ends */
+
+/* google maps css starts*/
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.box {
+    max-width: 600px;
+}
+
+/* google maps css ends */
+
+
+input, textarea, button {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 23px;
+    padding: 10px;
+    border: 3px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+
+
+
+
