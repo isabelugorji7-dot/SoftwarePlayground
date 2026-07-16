@@ -8,7 +8,6 @@
    
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/restaurant.css' %}">
-    <img src="{% static 'images/logo.png' %}">
 
 
 </header>
@@ -16,18 +15,18 @@
   class="reservation-page">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-          <a class="navbar-brand" href="restaurantcode.html">Bella's Restaurant</a>
+          <a class="navbar-brand" href="{% url 'home' %}">Bella's Restaurant</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="restaurantcode.html">Home</a>
-                  <a class="nav-link" href="menu.html">Menu</a>
-                  <a class="nav-link" href="reservations.html">Reservations</a>
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                  <a class="nav-link" href="customersreviews.html">Customers Reviews</a> <!-- Frequently asked questions(faq), customer rreviews -->
-                  <a class="nav-link" href="locateus.html">Locate Us</a> <!-- locate us on the map, view opening hours -->
+                  <a class="nav-link" href="{% url 'menu' %}">Menu</a>
+                  <a class="nav-link" href="{% url 'reservations' %}">Reservations</a>
+                  <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                  <a class="nav-link" href="{% url 'customersreview' %}">Customers Reviews</a> <!-- Frequently asked questions(faq), customer rreviews -->
+                  <a class="nav-link" href="{% url 'locateus'%}">Find Us</a> <!-- locate us on the map, view opening hours -->
                 </div>
               </div>
             </div>
@@ -45,7 +44,7 @@
     <!-- CARD 1 -->
     <div class="col-md-4 mb-4">
       <div class="card">
-        <img src="../images/2814818512986550.jpeg" class="card-img-top" alt="...">
+        <img src="{% static 'images/2814818512986550.jpeg' %}"> class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text">
             Explore Our Dishes
@@ -57,7 +56,7 @@
     <!-- CARD 2 -->
     <div class="col-md-4 mb-4">
       <div class="card">
-        <img src="../images/2814818512986550.jpeg" class="card-img-top" alt="...">
+        <img src="{% static 'images/2814818512986550.jpeg' %}" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text">
             Explore Our Dishes
@@ -69,7 +68,7 @@
     <!-- CARD 3 -->
     <div class="col-md-4 mb-4">
       <div class="card">
-        <img src="../images/2814818512986550.jpeg" class="card-img-top" alt="...">
+        <img src="{% static 'images/2814818512986550.jpeg' %}" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text">
             Explore Our Dishes
@@ -95,7 +94,7 @@
     <!-- CARD 1 -->
     <div class="col-md-4 mb-4">
       <div class="card">
-        <img src="../images/2814818512986550.jpeg" class="card-img-top" alt="...">
+        <img src="{% static 'images/2814818512986550.jpeg' %}" class="card-img-top" alt="...">
         <div class="card-body">
           
           <p class="card-text">
@@ -110,7 +109,7 @@
     <!-- CARD 2 -->
     <div class="col-md-4 mb-4">
       <div class="card">
-        <img src="../images/2814818512986550.jpeg" class="card-img-top" alt="...">
+        <img src="{% static 'images/2814818512986550.jpeg' %}" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text">
             An amazing dining experience! Best Italian food in town.
@@ -124,7 +123,7 @@
     <!-- CARD 3 -->
     <div class="col-md-4 mb-4">
       <div class="card">
-        <img src="../images/2814818512986550.jpeg" class="card-img-top" alt="...">
+        <img src="{% static 'images/2814818512986550.jpeg' %}" class="card-img-top" alt="...">
         <div class="card-body">
           <p class="card-text">
             Perfect for date night with thw wife! Great food and wine.
@@ -146,22 +145,22 @@
     <div class="row">
       <div class="col-md-4">
         <div class="thumbnail">
-          <a href="../images/25543922885726518.jpeg" target="_blank">
-            <img  class="home-image"   src="../images/25543922885726518.jpeg" alt="Lights" style="width:100%">
+          <a href="{% static 'images/25543922885726518.jpeg' %}" target="_blank">
+            <img  class="home-image"   src="{% static 'images/25543922885726518.jpeg' %}" alt="Lights" style="width:100%">
           </a>
-        </div>
+        </div> 
       </div>
       <div class="col-md-4">
       <div class="thumbnail">
-          <a href="../images/25543922885726518.jpeg" target="_blank">
-            <img class="home-image" src="../images/25543922885726518.jpeg" alt="Nature" style="width:100%">
+          <a href="{% static 'images/25543922885726518.jpeg' %}" target="_blank">
+            <img class="home-image" src="{% static 'images/25543922885726518.jpeg' %}"alt="Nature" style="width:100%">
           </a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="thumbnail">
-          <a href="../images/25543922885726518.jpeg" target="_blank">
-            <img class="home-image" src="../images/25543922885726518.jpeg" alt="Fjords" style="width:100%">
+          <a href="{% static 'images/25543922885726518.jpeg' %}" target="_blank">
+            <img class="home-image" src="{% static 'images/25543922885726518.jpeg' %}" alt="Fjords" style="width:100%">
           </a>
         </div>
       </div>
@@ -172,22 +171,22 @@
     <div class="row">
       <div class="col-md-4">
         <div class="thumbnail">
-          <a href="../images/25543922885726518.jpeg" target="_blank">
-            <img class="home-image" src="../images/25543922885726518.jpeg" alt="Lights" style="width:100%">
+          <a href="{% static 'images/25543922885726518.jpeg' %}" target="_blank">
+            <img class="home-image" src="{% static 'images/25543922885726518.jpeg' %}" alt="Lights" style="width:100%">
           </a>
         </div>
       </div>
       <div class="col-md-4">
       <div class="thumbnail">
-          <a href="../images/25543922885726518.jpeg" target="_blank">
-            <img class="home-image" src="../images/25543922885726518.jpeg" alt="Nature" style="width:100%">
+          <a href="{% static 'images/25543922885726518.jpeg' %}" target="_blank">
+            <img class="home-image" src="{% static 'images/25543922885726518.jpeg' %}" alt="Nature" style="width:100%">
           </a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="thumbnail">
-          <a href="../images/25543922885726518.jpeg" target="_blank">
-            <img class="home-image" src="../images/25543922885726518.jpeg" alt="Fjords" style="width:100%">
+          <a href="{% static 'images/25543922885726518.jpeg' %}" target="_blank">
+            <img class="home-image" src="{% static 'images/25543922885726518.jpeg' %}" alt="Fjords" style="width:100%">
           </a>
         </div>
       </div>

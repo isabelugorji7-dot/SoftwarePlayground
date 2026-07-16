@@ -16,9 +16,29 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from bookings.views import home
+from bookings.views import (
+    home, menu, breakfast, lunch, dinner, kids, drinks,
+    contact, reservations, locateus,
+    summer, autumn, winter, spring
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     path('', home, name='home'),
+    path('menu/', menu, name='menu'),
+    path('breakfast/', breakfast, name='breakfast'),
+    path('lunch/', lunch, name='lunch'),
+    path('dinner/', dinner, name='dinner'),
+    path('kids/', kids, name='kids'),
+    path('drinks/', drinks, name='drinks'),
+    path('contact/', contact, name='contact'),
+    path('reservations/', reservations, name='reservations'),
+    path('locateus/', locateus, name='locateus'),
+
+    # Seasonal menus
+    path('summer/', summer, name='summer'),
+    path('autumn/', autumn, name='autumn'),
+    path('winter/', winter, name='winter'),
+    path('spring/', spring, name='spring'),
 ]
