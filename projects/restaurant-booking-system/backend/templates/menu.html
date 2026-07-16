@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <title>Bella's Restaurant Menu</title>
-
     <!-- Your custom CSS -->
-    <link rel="stylesheet" href="../backend/restaurant.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/restaurant.css' %}">
+
 </head>
 
 <body class="menu-page">
@@ -24,19 +23,19 @@
                   <a class="nav-link active" aria-current="true" href="#">Menu</a> <!-- Expand page later and link to a single Breakfast html-->
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../frontend/menus/breakfast.html">Breakfast</a> <!-- Expand page later and link to a single Breakfast html-->
+                  <a class="nav-link" href="{% url 'breakfast' %}">Breakfast</a> <!-- Expand page later and link to a single Breakfast html-->
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../frontend/menus/lunch.html">Lunch</a> <!-- Expand page later and link to a single Lunch html-->
+                  <a class="nav-link" href="{% url 'lunch' %}">Lunch</a> <!-- Expand page later and link to a single Lunch html-->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../frontend/menus/dinner.html">Dinner</a> <!-- Expand page later and link to a single Dinner html-->
+                    <a class="nav-link" href="{% url 'dinner' %}">Dinner</a> <!-- Expand page later and link to a single Dinner html-->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../frontend/menus/drinks.html">Drinks</a> <!-- Expand page later and link to a single Drinks html-->
+                    <a class="nav-link" href="{% url 'drinks' %}">Drinks</a> <!-- Expand page later and link to a single Drinks html-->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../frontend/menus/kids.html">Kids</a> <!-- Expand page later and link to a single kids menu html-->
+                    <a class="nav-link" href="{% url 'kids' %}">Kids</a> <!-- Expand page later and link to a single kids menu html-->
                 </li>
 
                 <!-- ⭐ FIXED SEASONS DROPDOWN ⭐ -->
@@ -50,10 +49,10 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../frontend/menus/seasons/summer.html">Summer</a></li>
-                        <li><a class="dropdown-item" href="../frontend/menus/seasons/spring.html">Spring</a></li>
-                        <li><a class="dropdown-item" href="../frontend/menus/seasons/autumn.html">Autumn</a></li>
-                        <li><a class="dropdown-item" href="../frontend/menus/seasons/winter.html">Winter</a></li>
+                        <li><a class="dropdown-item" href="{% url 'summer' %}">Summer Specials</a></li>
+                        <li><a class="dropdown-item" href="{% url 'spring' %}">Spring Specials</a></li>
+                        <li><a class="dropdown-item" href="{% url 'autumn' %}">Autumn Specials</a></li>
+                        <li><a class="dropdown-item" href="{% url 'winter' %}">Winter Specials</a></li>
                     </ul>
                 </li>
                 <!-- ⭐ END FIX ⭐ -->
