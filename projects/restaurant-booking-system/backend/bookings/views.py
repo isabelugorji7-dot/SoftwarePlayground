@@ -7,19 +7,20 @@ def menu(request):
     return render(request, 'menu.html')
 
 def breakfast(request):
-    return render(request, 'breakfast.html')
+    return render(request, 'menus/breakfast.html')
 
 def lunch(request):
-    return render(request, 'lunch.html')
+    return render(request, 'menus/lunch.html')
 
 def dinner(request):
-    return render(request, 'dinner.html')
-
-def kids(request):
-    return render(request, 'kids.html')
+    return render(request, 'menus/dinner.html')
 
 def drinks(request):
-    return render(request, 'drinks.html')
+    return render(request, 'menus/drinks.html')
+
+def kids(request):
+    return render(request, 'menus/kids.html')
+
 
 def contact(request):
     return render(request, 'contact.html')
