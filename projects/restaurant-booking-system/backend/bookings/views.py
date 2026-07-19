@@ -21,7 +21,6 @@ def drinks(request):
 def kids(request):
     return render(request, 'menus/kids.html')
 
-
 def contact(request):
     return render(request, 'contact.html')
 
