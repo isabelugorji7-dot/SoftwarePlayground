@@ -75,6 +75,13 @@ body {
     font-display: block;  
 }
 
+/* Breakfast Menu Page */
+.card-img-top {
+    max-height: 50px;
+    max-height: 50px;
+}
+
+
 /* Contact page */
 /* main contact page css starts */
 .contact-page {
