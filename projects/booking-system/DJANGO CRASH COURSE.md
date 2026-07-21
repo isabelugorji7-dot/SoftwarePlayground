@@ -79,8 +79,21 @@ THIS IS MESSY AND NOT THE BEST FOR BIG PROJECTS.
             path('', include('base.urls'))  
 9. Templates
     In main project file create a folder called template this is where all the html pages will be stored
-        - 
+        - home.html
+        - room.html
+    - You need to return the pages inside of your views.py 
+        - go into the main project folder 
+        - then settings.py
+        - then templates in the settings.py 
+        - in the 'DIRS': [] add BASE_DIR / 'templates' this is telling django that the home page is in templates folder
+    - In views.py for the base folder remove the HttpResponse and replace it with 
+        - render(request, 'home.html') same for any other pages 
 
+DJANGO DATABASE SETUP
+1. Open the settings.py iin the main folder 
+- python manage.py migrate
+2. Go to models.py in base
+- 
 
 
 
