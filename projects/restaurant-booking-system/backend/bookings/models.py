@@ -1,3 +1,8 @@
 from django.db import models
+from django import forms
+from .models import Booking
 
-# Create your models here.
+class BookingForm(forms.ModelForm):
+    class Meta:
+        model = Booking
+        fields = ['name', 'email', 'date', 'time', 'guests']

@@ -1,0 +1,51 @@
+.booking-form h4 {
+    background: #720f28;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.booking-form {
+    max-width: 600px;
+    background: white;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: #720f28;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #720f28;
+}
+
+.hidden {
+    display: none;
+}
+
+

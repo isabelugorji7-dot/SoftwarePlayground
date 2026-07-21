@@ -58,11 +58,6 @@ body {
 
 
 
-/* Reservations page */
-.reservations-page {
-    background-color: #f7efe8;
-}
-
 /* Menu page */
 .menu-page {
     background-color:bisque;
@@ -77,9 +72,12 @@ body {
 
 /* Breakfast Menu Page */
 .card-img-top {
-    max-height: 50px;
-    max-height: 50px;
+    width: 100%;
+    height: 250px;        /* you can change this */
+    object-fit: cover;    /* prevents distortion */
+    object-position: center;
 }
+
 
 
 /* Contact page */
