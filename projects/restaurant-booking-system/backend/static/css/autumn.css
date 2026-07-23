@@ -1,0 +1,28 @@
+.autumn {
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    background: #720f28
+}
+
+.autumn-header {
+    text-align: center;
+}
+
+/*Grid Css*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 1.2rem; /* soft spacing */
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.grid .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+

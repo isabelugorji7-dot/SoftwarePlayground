@@ -3,15 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinner Menu</title>
+    <title>Lunch Menu</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/dinner.css' %}">
 </head>
-<body>
+<body class="dinner">
     <header>
-        Dinner Specials
+        <h1 class="dinner-header">Dinner Specials</h1>
     </header>
 
     <main>
-
+        <main>
+        <div class="grid">
+            <div class="box">
+                <img src="{% static 'images/dinner.jpeg' %}"></div>
+            <div class="box">
+                <img src="{% static 'images/dinner1.jpeg' %}"></div>
+            <div class="box">
+                <img src="{% static 'images/dinner2.jpeg' %}"></div>
+            <div class="box">
+                <img src="{% static 'images/dinner3.jpeg' %}"></div>
+            <div class="box">
+                <img src="{% static 'images/dinner4.jpeg' %}"></div>
+            <div class="box">
+                <img src="{% static 'images/dinner5.jpeg' %}"></div>
+            <div class="box">
+                <img src="{% static 'images/dinner6.jpeg' %}"></div>
+            <div class="box">
+                <img src="{% static 'images/dinner7.jpeg' %}"></div>
+            <div class="box">
+                <img src="{% static 'images/dinner8.jpeg' %}"></div>
+            <div class="box">
+                <img src="{% static 'images/dinner9.jpeg' %}"></div>
+            <div class="box">
+                <img src="{% static 'images/dinner10.jpeg' %}"></div>
+            <div class="box">
+                <img src="{% static 'images/dinner11.jpeg' %}"></div> 
+        </div>
     </main>
 </body>
 </html>
