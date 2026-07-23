@@ -6,10 +6,10 @@ A restaurant needs a modern website where customers can:
 
 - View menu items
 - Make table reservations
-- Contact the restaurant
-- Leave reviews
-- Find the location
-- View opening hours
+- Contact the restaurant ✅
+- Leave reviews ✅
+- Find the location ✅
+- View opening hours 
 
 ## Features
 
