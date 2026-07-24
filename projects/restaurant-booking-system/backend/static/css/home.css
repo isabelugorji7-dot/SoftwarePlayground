@@ -1,5 +1,6 @@
 body {
-    background: pink;
+   background: #720f28;
+   color: aliceblue;
 }
 
 /* Home page */
@@ -49,6 +50,9 @@ body {
 
 .card-text {
     text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 
 .card-head {
@@ -70,7 +74,50 @@ input, textarea, button {
     box-sizing: border-box;
 }
 
+.card img {
+    width: 100%;
+    height: 250px;      /* choose any height you like */
+    object-fit: cover;  /* crops perfectly */
+    object-position: center;
+    border-radius: 5px; /* optional */
+}
 
+.home-image {
+    width: 100%;
+    height: 250px;        /* choose any height you want */
+    object-fit: cover;    /* crops the image perfectly */
+    object-position: center;
+    border-radius: 8px;   /* optional, matches your aesthetic */
+    display: block;
+}
+
+
+/*gallery image*/
+.gallery {
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+    background: #720f28
+}
+
+.gallery-header {
+    text-align: center;
+}
+
+/*Grid Css*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 1.2rem; /* soft spacing */
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.grid .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
 
 
 

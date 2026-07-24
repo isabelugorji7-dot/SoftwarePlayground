@@ -30,6 +30,9 @@ def reservations(request):
 def locateus(request):
     return render(request, 'locateus.html')
 
+def gallery(request):
+    return render(request, 'gallery.html')
+
 # Seasonal menus
 def summer(request):
     return render(request, 'menus/seasons/summer.html')
