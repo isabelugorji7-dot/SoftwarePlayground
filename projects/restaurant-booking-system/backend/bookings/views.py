@@ -33,6 +33,9 @@ def locateus(request):
 def gallery(request):
     return render(request, 'gallery.html')
 
+def customersreview(request):
+    return render(request, 'customersreview.html')
+
 # Seasonal menus
 def summer(request):
     return render(request, 'menus/seasons/summer.html')

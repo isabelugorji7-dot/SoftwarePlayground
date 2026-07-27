@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from bookings.views import (
-    home, menu, breakfast, lunch, dinner, kids, drinks, gallery,
+    home, menu, breakfast, lunch, dinner, kids, drinks, gallery, customersreview,
     contact, reservations, locateus,
     summer, autumn, winter, spring
 )
@@ -36,6 +36,7 @@ urlpatterns = [
     path('reservations/', reservations, name='reservations'),
     path('locateus/', locateus, name='locateus'),
     path('gallery/', gallery, name='gallery'),
+    path('customersreview/', customersreview, name='customersreview'),
 
     # Seasonal menus
     path('summer/', summer, name='summer'),

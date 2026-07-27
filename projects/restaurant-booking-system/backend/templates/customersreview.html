@@ -6,28 +6,26 @@
     <title>Customers reviews</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/restaurant.css' %}">
+    <link rel="stylesheet" href="{% static 'css/customersreview.css' %}">
 
 </head>
-<body
+<body class="customers-review">
+    <h3>Leave a review</h3>
+    <p>We would love to get your feedback about the following meals:</p>
+    
+     <div>
+        <label>Display name</label>
+        <p>This name will appear alongside your review</p>
+        <input type="text" placeholder="Bella Giordani">
+    </div>
+    <br>
     <div>
-        <input type="text" name="first name" placeholder="First Name" id="first-name">
+        <label>Reviews</label>
+        <br>
+        <textarea name="Review" id="review" cols="50" rows="10"></textarea>
     </div>
 
-    <div>
-        <input type="text" name="last name" placeholder="Last Name" id="last-name">
-    </div>
 
-    <div>
-        <input type="email" name="email-address" placeholder="bellagiordano@mail.com" id="email-address">
-    </div>
-
-    <div>
-        <input type="tel" name="phone-number" placeholder="07xxxxxxxxx" id="phone-number">
-    </div>
-
-    <div>
-        <textarea name="message" rows="5" cols="30" placeholder="Message"></textarea>
-    </div>
+   
 </body>
 </html>
