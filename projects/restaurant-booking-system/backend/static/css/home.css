@@ -60,6 +60,12 @@ body {
     color: brown;
 }
 
+.accordion-body,
+.accordion-body strong {
+    color: black;
+}
+
+
 
 /* google maps css ends */
 

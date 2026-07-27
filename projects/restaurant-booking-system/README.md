@@ -29,8 +29,17 @@ Future:
 - Admin dashboard
 - Email confirmations
 
-so far for the restaurant booking system ive completed the - Contact the restaurant ✅
+## Version 0.1
 
-- Leave reviews ✅
+- Created homepage
+- Added navigation
+- Created menu page
+- Added seasonal food categories
+- Added Google Maps
+- Built booking page (UI)
 
-- Find the location ✅ book a reservation ✅ the menu item links work i'm just going to add images and display the foods and drinks by seasons and meals of the day i'm currently working on the opening hours too and its in django all these the gallery works and displays the food in breakfast dinner drinks lunch by 4 different seasons too 
+## Next
+
+- Finish opening hours
+- Add JavaScript validation
+- Connect booking form to Django models
