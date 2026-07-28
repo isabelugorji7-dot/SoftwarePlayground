@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/summer.css' %}">
 </head>
+
 <body class="summer">
     <header>
         <h1 class="summer-header">Summer Specials</h1>
@@ -15,32 +17,50 @@
     <main>
         <div class="grid">
             <div class="box">
-                <img src="{% static 'images/summer.jpeg' %}"></div>
+                <img src="{% static 'images/summer.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/summer1.jpeg' %}"></div>
+                <img src="{% static 'images/summer1.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/summer2.jpeg' %}"></div>
+                <img src="{% static 'images/summer2.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/summer3.jpeg' %}"></div>
+                <img src="{% static 'images/summer3.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/summer4.jpeg' %}"></div>
+                <img src="{% static 'images/summer4.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/summer5.jpeg' %}"></div>
+                <img src="{% static 'images/summer5.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/summer6.jpeg' %}"></div>
+                <img src="{% static 'images/summer6.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/summer7.jpeg' %}"></div>
+                <img src="{% static 'images/summer7.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/summer8.jpeg' %}"></div>
+                <img src="{% static 'images/summer8.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/summer9.jpeg' %}"></div>
+                <img src="{% static 'images/summer9.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/summer10.jpeg' %}"></div>
+                <img src="{% static 'images/summer10.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/summer11.jpeg' %}"></div> 
+                <img src="{% static 'images/summer11.jpeg' %}">
+            </div>
         </div>
 
+        <a href="{% url 'home' %}">
+            <button type="button" class="btn"
+                style="width: 100%; padding: 14px;background: white; color: black; border: none;border-radius: 6px;font-size: 1.1rem; cursor: pointer; transition: 0.3s;">
+                Back to Home</button>
+        </a>
 
     </main>
 </body>
+
 </html>

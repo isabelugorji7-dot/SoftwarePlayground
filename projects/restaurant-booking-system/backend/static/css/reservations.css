@@ -11,7 +11,7 @@
     margin: 40px auto;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -48,4 +48,6 @@ input {
     display: none;
 }
 
-
+.button {
+    background-color: #720f28;
+}

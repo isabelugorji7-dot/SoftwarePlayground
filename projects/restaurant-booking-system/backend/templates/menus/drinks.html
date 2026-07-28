@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/drinks.css' %}">
 </head>
+
 <body class="drinks">
     <header>
         <h1 class="drinks-header">Drinks Specials</h1>
@@ -15,32 +17,50 @@
     <main>
         <div class="grid">
             <div class="box">
-                <img src="{% static 'images/drink.jpeg' %}"></div>
+                <img src="{% static 'images/drink.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/drink1.jpeg' %}"></div>
+                <img src="{% static 'images/drink1.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/drink2.jpeg' %}"></div>
+                <img src="{% static 'images/drink2.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/drink3.jpeg' %}"></div>
+                <img src="{% static 'images/drink3.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/drink4.jpeg' %}"></div>
+                <img src="{% static 'images/drink4.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/drink5.jpeg' %}"></div>
+                <img src="{% static 'images/drink5.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/drink6.jpeg' %}"></div>
+                <img src="{% static 'images/drink6.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/drink7.jpeg' %}"></div>
+                <img src="{% static 'images/drink7.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/drink8.jpeg' %}"></div>
+                <img src="{% static 'images/drink8.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/drink9.jpeg' %}"></div>
+                <img src="{% static 'images/drink9.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/drink10.jpeg' %}"></div>
+                <img src="{% static 'images/drink10.jpeg' %}">
+            </div>
             <div class="box">
-                <img src="{% static 'images/drink11.jpeg' %}"></div> 
+                <img src="{% static 'images/drink11.jpeg' %}">
+            </div>
         </div>
 
+        <a href="{% url 'home' %}">
+            <button type="button" class="btn"
+                style="width: 100%; padding: 14px;background: white; color: black; border: none;border-radius: 6px;font-size: 1.1rem; cursor: pointer; transition: 0.3s;">
+                Back to Home</button>
+        </a>
 
     </main>
 </body>
+
 </html>

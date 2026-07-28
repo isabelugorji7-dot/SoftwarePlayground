@@ -11,8 +11,10 @@
 /*Grid Css*/
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 1.2rem; /* soft spacing */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 equal columns */
+    gap: 1.2rem;
+    /* soft spacing */
     max-width: 1000px;
     margin: 40px auto;
 }
@@ -23,6 +25,3 @@
     object-fit: cover;
     border-radius: 12px;
 }
-
-
-

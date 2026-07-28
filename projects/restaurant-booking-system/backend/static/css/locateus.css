@@ -12,7 +12,7 @@ section {
     margin: 40px auto;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .location-box {
@@ -21,15 +21,16 @@ section {
     margin: 40px auto;
     padding: 1px;
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .locate-us {
-   background: #720f28;
+    background: #720f28;
 }
 
 /*Opening Hours start here */
-.span {
+.opening-hours {
     color: aliceblue;
 }
+
 /*Opening Hours start here */
