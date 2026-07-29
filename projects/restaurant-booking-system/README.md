@@ -4,21 +4,21 @@
 
 A restaurant needs a modern website where customers can:
 
-- View menu items
+- View menu items ✅
 - Make table reservations ✅
 - Contact the restaurant ✅
 - Leave reviews ✅
 - Find the location ✅
-- View opening hours 
+- View opening hours ✅
 
 ## Features
 
 Frontend:
 - Homepage ✅
-- Menu page 
+- Menu page ✅
 - Booking form ✅
 - Gallery ✅
-- Reviews 
+- Reviews ✅
 
 Backend:
 - User accounts
@@ -28,6 +28,18 @@ Backend:
 Future:
 - Admin dashboard
 - Email confirmations
+
+Things I'd improve
+- 🍽️ Menu
+- Food images
+- Food descriptions
+- Prices
+- Dietary icons (🌱 Vegetarian, 🌶️ Spicy, etc.)
+- Seasonal labels
+- 📸 Gallery
+- Better image layout
+- Hover effects
+- Lightbox when images are clicked (later with JavaScript)
 
 ## Version 0.1
 
