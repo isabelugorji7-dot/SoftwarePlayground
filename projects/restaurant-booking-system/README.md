@@ -1,57 +1,114 @@
-# Bella Restaurant Booking System
+# 🍽️ Restaurant Booking System
+
+## Overview
+
+A modern restaurant website built with Django to simulate a real client project.
+
+This project is part of my SoftwarePlayground, where I build software systems to improve my web development skills.
+
+---
 
 ## Client Request
 
-A restaurant needs a modern website where customers can:
+The restaurant requested a website where customers can:
 
-- View menu items ✅
-- Make table reservations ✅
-- Contact the restaurant ✅
-- Leave reviews ✅
-- Find the location ✅
-- View opening hours ✅
+- View menu items
+- Make table reservations
+- Contact the restaurant
+- Leave reviews
+- Find the restaurant location
+- View opening hours
 
-## Features
+---
 
-Frontend:
-- Homepage ✅
-- Menu page ✅
-- Booking form ✅
-- Gallery ✅
-- Reviews ✅
+## Current Features
 
-Backend:
+### Frontend
+
+- Responsive homepage
+- Navigation bar
+- Menu page
+- Gallery
+- Booking page
+- Reviews page
+- Contact page
+- Google Maps location
+- Opening hours
+
+---
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- Django
+- Bootstrap
+- Git
+- GitHub
+
+---
+
+## Current Status
+
+Version 0.1
+
+The frontend pages have been completed.
+
+The website currently focuses on user interface and navigation.
+
+Backend logic and database functionality will be added as I continue learning JavaScript, Django, and SQL.
+
+---
+
+## Planned Features
+
+### JavaScript
+
+- Form validation
+- Interactive booking form
+- Better user experience
+
+### Django
+
+- Booking system
 - User accounts
-- Booking management
-- Database
-
-Future:
+- Authentication
 - Admin dashboard
+
+### Database
+
+- Customer records
+- Reservations
+- Reviews
+- Menu management
+
+---
+
+## Skills Practised
+
+- HTML structure
+- CSS styling
+- Responsive layouts
+- Django templates
+- URL routing
+- Bootstrap components
+- Project organisation
+
+---
+
+## Future Improvements
+
 - Email confirmations
+- Booking availability checker
+- Customer login
+- Restaurant admin panel
+- Search functionality
+- Mobile optimisation
 
-Things I'd improve
-- 🍽️ Menu
-- Food images
-- Food descriptions
-- Prices
-- Dietary icons (🌱 Vegetarian, 🌶️ Spicy, etc.)
-- Seasonal labels
-- 📸 Gallery
-- Better image layout
-- Hover effects
-- Lightbox when images are clicked (later with JavaScript)
+---
 
-## Version 0.1
+## Author
 
-- Created homepage
-- Added navigation
-- Created menu page
-- Added seasonal food categories
-- Added Google Maps
-- Built booking page (UI)
+Isabel Ugorji Okorie
 
-## Next
-
-- Finish opening hours
-- Add JavaScript validation
-- Connect booking form to Django models
+Software Development Student
