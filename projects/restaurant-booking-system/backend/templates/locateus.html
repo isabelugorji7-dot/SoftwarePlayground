@@ -11,42 +11,52 @@
     <link rel="stylesheet" href="{% static 'css/locateus.css' %}">
 </head>
 
-<body class="locate-us">
-    <!-- Google Map Location Starts here -->
-    <section>
-        <div>
-            <a href="{% url 'reservations' %}" class="btn btn-primary">Make a Reservation</a>
-        </div>
+<body class="locate-us" style="font-family: 'Courier New', Courier, monospace; font-size: 19px; padding: 30px;">
 
-        <div class="box">
-            <h1> Our Location </h1>
-            <p> Bella’s Restaurant is always happy to hear from you. Whether you’re booking a table, asking a question,
-                or planning a special visit, our team is here to help. You’ll find us in the heart of Worksop, with easy
-                access and convenient parking nearby. Reach out through our contact form, give us a call, or visit us in
-                person — we’re ready to welcome you.
-            </p>
-        </div>
+    <h2 style="color: aliceblue;">Find Bella's Restaurant</h2>
 
-        <iframe class="location-box"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2383.781284058253!2d-1.1477779237556134!3d53.31136317734103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879a167b4a11c61%3A0x27a29b343b227e3b!2sStarbucks!5e0!3m2!1sen!2suk!4v1783966370561!5m2!1sen!2suk"
-            width="500px" height="500px" style="border: 1px;" allowfullscreen="" loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <!-- HERO BANNER -->
+    <div class="locate-hero">
+        <img src="{% static 'images/banner2.jpeg' %}" style="width:100%; height:400px; object-fit:cover;">
+    </div><br>
 
-        <div class="box">
-            <h4>Opening Hours</h4>
-            <p><span>Monday</span> 5:00 PM - 12:00 AM</p>
-            <p><span>Friday</span> 6:00 PM - 9:00 PM</p>
-            <p><span>Saturday</span> 7:00 PM - 11:00 PM</p>
-            <p><span>Sunday</span> 5:00 PM - 10:00 PM</p>
-            <p><span>Tuesday-Thursday</span> Closed</p>
-        </div>
-    </section>
+    <h3 style="color: aliceblue;">Visit Us</h3>
+    <p style="color: aliceblue;">
+        We’re located in the heart of Worksop, offering cozy Italian dining with fresh dishes,
+        warm lighting, and friendly service. Whether you're stopping by for breakfast or dinner,
+        we can’t wait to welcome you.
+    </p><br>
+    📍
+    <p style="color: aliceblue;">Rhodesia, Worksop, S80 3DN</p><br>
+    ⏰
+    <h3 style="color: aliceblue;">Opening Hours</h3>
+    <ul style="color: aliceblue;">
+        <li>Monday: Closed</li>
+        <li>Tuesday: Closed</li>
+        <li>Wednesday: 6:00PM - 12:00PM</li>
+        <li>Thursday: 6:00PM - 10:00PM</li>
+        <li>Friday: 6:00PM -12:00PM</li>
+        <li>Saturday: 6:00PM - 11:00PM</li>
+        <li>Sunday: 6:00PM - 10:00PM</li>
+    </ul><br>
+
+    📞
+    <p style="color: aliceblue;">Call us: 01234 567890</p>
+
+    <div class="locate-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.123456789!2d-1.123456!3d53.312345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879abcd123456%3A0xabcdef123456!2sWorksop%20S80!5e0!3m2!1sen!2suk!4v0000000000"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div><br>
+
+
     <!-- Google Map Location Starts here -->
 
     <!-- Back to Home Page -->
     <a href="{% url 'home' %}">
         <button type="button" class="btn"
-            style="width: 100%; padding: 14px;background: white; color: black; border: none;border-radius: 6px;font-size: 1.1rem; cursor: pointer; transition: 0.3s;">
+            style="width: 100%; padding: 14px;background: white; color: black; border: none;border-radius: 6px;font-size: 1.1rem; cursor: pointer; transition: 0.3s; font-size: 19px;">
             Back to Home</button>
     </a>
 </body>
