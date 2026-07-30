@@ -36,6 +36,8 @@ A beauty salon requires a modern website where customers can:
 - HTML
 - CSS
 - Bootstrap
+- Pico.css
+- Animate.css
 - Django
 - JavaScript (later)
 - SQL (later)

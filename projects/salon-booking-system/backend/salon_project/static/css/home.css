@@ -1,0 +1,21 @@
+.home-page {
+  background-color: bisque;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #950a2d;
+}
+
+.main-heading {
+  padding: 20px;
+  text-align: center;
+}
+
+.btn1 {
+  background-color: #950a2d;
+  color: white;
+  border: white;
+  display: block;
+  text-align: center;
+}
