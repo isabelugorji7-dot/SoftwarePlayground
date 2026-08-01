@@ -1,133 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <title>Bella's Restaurant Menu</title>
 
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
-</head>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}" />
+  </head>
 
-<body class="menu-page">
+  <body class="menu-page">
     <main>
-        <div class="card text-center">
-            <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs">
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="{% url 'menu' %}">Menu</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'menu' %}">Menu</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'breakfast' %}">Breakfast</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'breakfast' %}">Breakfast</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'lunch' %}">Lunch</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'lunch' %}">Lunch</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'dinner' %}">Dinner</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'dinner' %}">Dinner</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'drinks' %}">Drinks</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'drinks' %}">Drinks</a>
-                    </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'kids' %}">Kids</a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'kids' %}">Kids</a>
-                    </li>
-
-                    <!-- Seasons Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Seasons
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'summer' %}">Summer Specials</a></li>
-                            <li><a class="dropdown-item" href="{% url 'spring' %}">Spring Specials</a></li>
-                            <li><a class="dropdown-item" href="{% url 'autumn' %}">Autumn Specials</a></li>
-                            <li><a class="dropdown-item" href="{% url 'winter' %}">Winter Specials</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="card-body">
-                <h5 class="card-title">Book a Table</h5>
-                <p class="card-text">Fancy the items below? Book a table at Bella's Restaurant for the full treatment.
-                </p>
-
-                <a href="{% url 'reservations' %}" class="btn btn-primary">Make a Reservation</a>
-            </div>
+            <!-- Seasons Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Seasons
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="{% url 'summer' %}"
+                    >Summer Specials</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'spring' %}"
+                    >Spring Specials</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'autumn' %}"
+                    >Autumn Specials</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'winter' %}"
+                    >Winter Specials</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
 
-        <!-- Carousel of Food Images-->
-        <div id="menuCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="card-body">
+          <h5 class="card-title">Book a Table</h5>
+          <p class="card-text">
+            Fancy the items below? Book a table at Bella's Restaurant for the
+            full treatment.
+          </p>
 
-            <!-- Indicators -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="3"></button>
-                <button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="4"></button>
-            </div>
+          <a href="{% url 'reservations' %}" class="btn btn-primary"
+            >Make a Reservation</a
+          >
+        </div>
+      </div>
 
-            <!-- Images -->
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <img src="{% static 'images/IMG_8411.jpeg' %}" class="d-block w-100" alt="Menu item 1">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="{% static 'images/groupmeal.jpeg' %}" class="d-block w-100" alt="Menu item 2">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="{% static 'images/IMG_8409.jpeg' %}" class="d-block w-100" alt="Menu item 3">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="{% static 'images/Night Feast 2026.jpeg' %}" class="d-block w-100" alt="Menu item 4">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="{% static 'images/drinks.jpeg' %}" class="d-block w-100" alt="Menu item 5">
-                </div>
-
-            </div>
-
-            <!-- Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-
+      <!-- Carousel of Food Images-->
+      <div
+        id="menuCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#menuCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#menuCarousel"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#menuCarousel"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#menuCarousel"
+            data-bs-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#menuCarousel"
+            data-bs-slide-to="4"
+          ></button>
         </div>
 
-        <a href="{% url 'home' %}">
-            <button type="button" class="btn"
-                style="width: 100%; padding: 14px;background: white; color: black; border: none;border-radius: 6px;font-size: 1.1rem; cursor: pointer; transition: 0.3s;">
-                Back to Home</button>
-        </a>
+        <!-- Images -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="{% static 'images/spring6.jpeg' %}"
+              class="d-block w-100"
+              alt="Menu item 1"
+            />
+          </div>
 
+          <div class="carousel-item">
+            <img
+              src="{% static 'images/summer1.jpeg' %}"
+              class="d-block w-100"
+              alt="Menu item 2"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="{% static 'images/winter3.jpeg' %}"
+              class="d-block w-100"
+              alt="Menu item 3"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="{% static 'images/breakfast.jpeg' %}"
+              class="d-block w-100"
+              alt="Menu item 4"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="{% static 'images/drink.jpeg' %}"
+              class="d-block w-100"
+              alt="Menu item 5"
+            />
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#menuCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#menuCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <a href="{% url 'home' %}">
+        <button
+          type="button"
+          class="btn"
+          style="
+            width: 100%;
+            padding: 14px;
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+          "
+        >
+          Back to Home
+        </button>
+      </a>
     </main>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
+  </body>
 </html>
